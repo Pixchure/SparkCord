@@ -1,4 +1,4 @@
-BungeeCord
+Sparkcord
 ==========
 Layer 7 proxy designed to link Minecraft servers.
 --------------------------------------------------
