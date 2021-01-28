@@ -16,6 +16,6 @@ public class CommandBungee extends Command
     @Override
     public void execute(CommandSender sender, String[] args)
     {
-        sender.sendMessage( ChatColor.BLUE + "Spark > This server is running BungeeCord version Spark by md_5" );
+        sender.sendMessage( ChatColor.BLUE + "SparkCord > This server is running SparkCord version " + ProxyServer.getInstance().getVersion() + " by md_5" );
     }
 }
