@@ -48,17 +48,17 @@ public class BungeeCordLauncher
             deadline.add( Calendar.WEEK_OF_YEAR, -8 );
             if ( buildDate.before( deadline.getTime() ) )
             {
-                System.err.println( "*** Warning, this build is outdated ***" );
-                System.err.println( "*** Please download a new build from http://ci.md-5.net/job/BungeeCord ***" );
-                System.err.println( "*** You will get NO support regarding this build ***" );
-                System.err.println( "*** Server will start in 10 seconds ***" );
+                System.err.println( "***               Warning, this build is MODIFIED                  ***" );
+                System.err.println( "*** Download Offical builds from http://ci.md-5.net/job/BungeeCord ***" );
+                System.err.println( "***           You will get NO support regarding this build         ***" );
+                System.err.println( "***                        >>> SparkCord <<<                       ***" );
                 Thread.sleep( TimeUnit.SECONDS.toMillis( 10 ) );
             }
         }
 
         BungeeCord bungee = new BungeeCord();
         ProxyServer.setInstance( bungee );
-        bungee.getLogger().info( "Enabled BungeeCord version " + bungee.getVersion() );
+        bungee.getLogger().info( "Enabled SparkCord version " + bungee.getVersion() );
         bungee.start();
 
         if ( !options.has( "noconsole" ) )
